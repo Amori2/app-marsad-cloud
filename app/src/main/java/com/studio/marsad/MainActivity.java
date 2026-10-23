@@ -340,12 +340,7 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void updateTimerNotification(final String modeTitle, final String timeStr, final String taskName, final boolean isRunning) {
-            activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    activity.showOrUpdateLockScreenTimer(modeTitle, timeStr, taskName, isRunning);
-                }
-            });
+            
         }
     }
 
